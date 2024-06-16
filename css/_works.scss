@@ -1,0 +1,41 @@
+@use "./mixin" as *;
+
+.works-page {
+    visibility: hidden; // loadingが終わるまで隠す
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    .sidebar {
+        .sidelist ul li:nth-child(2) {
+            color: #da9333;
+            background-color: #191919;
+            border-right: 2px solid #da9333;
+        }
+    }
+    .main {
+        &__block {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .work-block {
+            width: 300px;
+            height: 280px;
+            margin-inline: 30px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

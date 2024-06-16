@@ -1,0 +1,50 @@
+@use "./mixin" as *;
+
+.top-page {
+    visibility: hidden; // loadingが終わるまで隠す
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+    .sidebar {
+        .sidelist ul li:nth-child(1) {
+            color: #da9333;
+            background-color: #191919;
+            border-right: 2px solid #da9333;
+        }
+    }
+    .slide-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        overflow-x: scroll;
+
+        &__block {
+            flex: none;
+            width: 40%; // ここを変更するとcanvasの大きさも変わる
+            @include w1700 {
+                width: 45%;
+            }
+            @include w1440 {
+                width: 50%;
+            }
+            @include w1200 {
+                width: 55%;
+            }
+            @include w991 {
+                width: 60%;
+            }
+            @include w768 {
+                width: 100%;
+            }
+        }
+        .canvas-btn {
+            display: block;
+            width: 100%;
+            height: 100vh;
+        }
+    }
+}

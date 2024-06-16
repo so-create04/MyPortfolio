@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="/javascript/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/javascript/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <!-- loading -->
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2>Now Loading...</h2>
+    </div>
+
+    <!-- page start -->
+    <section class="top-page page-top">
+        <div class="sidebar">
+            <div class="menu-top">
+                <div class="menu-top__btn burgerBtn">
+                    <button id="menu-toggle-btn">
+                        <img src="/image/menu-btn.svg" alt="">
+                    </button>
+                </div>
+                <div class="menu-top__logo sidelogo">
+                    <img src="/image/site-logo.png" alt="">
+                </div>
+            </div>
+            <div class="sidelist" id="sidelist">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <span><img src="/image/menu-home-icon.svg" alt=""></span>
+                            <span>top</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./works.html">
+                            <span><img src="/image/menu-work-icon.svg" alt=""></span>
+                            <span>works</span>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            <span><img src="/image/menu-about-icon.svg" alt=""></span>
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                            <span><img src="/image/menu-contact-icon.svg" alt=""></span>
+                            <span>contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./skill.html">
+                            <span><img src="/image/menu-skill-icon.svg" alt=""></span>
+                            <span>skill</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./setting.html">
+                            <span><img src="/image/menu-setting-icon.svg" alt=""></span>
+                            <span>setting</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="slide-container">
+                <div class="slide-container__block slide-container__block--top">
+                    <a href="./index.html" class="canvas-btn">
+                        <canvas id="myCanvas1"></canvas>
+                    </a>
+                </div>
+                <div class="slide-container__block slide-container__block--works">
+                    <a href="./works.html" class="canvas-btn">
+                        <canvas id="myCanvas2"></canvas>
+                    </a>
+                </div>
+                <div class="slide-container__block slide-container__block--about">
+                    <a href="./about.html" class="canvas-btn">
+                        <canvas id="myCanvas3"></canvas>
+                    </a>
+                </div>
+                <div class="slide-container__block slide-container__block--contact">
+                    <a href="./contact.html" class="canvas-btn">
+                        <canvas id="myCanvas4"></canvas>
+                    </a>
+                </div>
+                <div class="slide-container__block slide-container__block--skill">
+                    <a href="./skill.html" class="canvas-btn">
+                        <canvas id="myCanvas5"></canvas>
+                    </a>
+                </div>
+                <div class="slide-container__block slide-container__block--setting">
+                    <a href="./setting.html" class="canvas-btn">
+                        <canvas id="myCanvas6"></canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/loading.js"></script>
+    <script src="/javascript/menu.js"></script>
+    <script src="/javascript/animation.js" type="module"></script>
+    <script src="/javascript/slick/slick.min.js" type="text/javascript"></script>
+    <script src="/javascript/slick-init.js" type="text/javascript"></script>
+</body>
+</html>
